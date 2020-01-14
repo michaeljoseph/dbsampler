@@ -61,7 +61,7 @@ class FieldCleanerProvider
             case 'fakeuser':
                 /** @noinspection PhpUnusedParameterInspection */
                 $cleaner = function ($existing) use ($faker) {
-                    return $faker->userName;
+                    return $faker->unique()->userName;
                 };
                 break;
             case 'faker':
